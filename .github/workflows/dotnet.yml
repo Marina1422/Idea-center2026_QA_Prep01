@@ -19,8 +19,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore ExamPrepIdeaCenter/Idea-center2026_QA_Prep01/*.csproj
+      run: dotnet restore Idea-center2026_QA_Prep01/*.csproj
     - name: Build
-      run: dotnet build ExamPrepIdeaCenter/Idea-center2026_QA_Prep01/*.csproj --configuration Release
+      run: dotnet build Idea-center2026_QA_Prep01/*.csproj --configuration Release
     - name: Test
       run: dotnet test --no-build --verbosity normal
