@@ -22,4 +22,5 @@ jobs:
       run: dotnet restore ExamPrepIdeaCenter/ExamPrepIdeaCenter.csproj
     - name: Build
       run: dotnet build ExamPrepIdeaCenter/ExamPrepIdeaCenter.csproj --configuration Release
+    - name: Test
       run: dotnet test --no-build --verbosity normal
